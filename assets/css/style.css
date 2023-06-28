@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-mehron:#800000;
+   --color-black:#2c2c28;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f2f2f2 !important;
+}
+
+.justify{
+    text-align: justify;
+}
+/* text color css start from here */
+
+.text_mehron{
+    color: var(--color-mehron) !important;
+}
+
+.bg_mehron{
+    background-color: var(--color-mehron);
+}
+/* navbar css start from here */
+
+.navbar-brand{
+    font-size: 2.5rem;
+    font-weight: 600;
+    border-top: 2px solid var(--color-mehron);
+    border-bottom: 2px solid var(--color-mehron);
+    color: var(--color-black);
+}
+.navbar-brand span{
+    color: var(--color-mehron) !important;
+}
+.navbar-nav .nav-item .nav-link{
+    color: var(--color-black);
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+    margin-right: 1rem;
+}
+
+@media (max-width:1042px){
+    .navbar-nav .nav-item .nav-link{
+        color: var(--color-black);
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: 0.08rem;
+    }
+}
+
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover{
+    color: var(--color-mehron);
+}
+
+
+.btn_register:hover{
+    background-color: var(--color-mehron) !important;
+    color: #ffffff !important;
+}
+
+.btn-close{
+    font-size: 1.5rem !important;
+}
+
+.navbar-toggler{
+    border: 2px solid var(--color-mehron) !important;
+}
+
+/* mobile menu css start from here */
+.offcanvas-body ul li a{
+    color: var(--color-black);
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+}
+
+.offcanvas-body ul li .mobile_nav:hover{
+    color: var(--color-mehron) !important;
+}
+
+.offcanvas-body ul li a.active{
+    color: var(--color-mehron);
+}
+
+.offcanvas-header .btn-close{
+    color: var(--color-mehron) !important;
+    font-size: 1.5rem;
+    border: 1px solid var(--color-mehron) !important;
+}
+
+/* hero section css start from here */
+.slider_img{
+    background-image: url(../../assets/images/hero.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 400px !important;
+}
+.slider_content{
+    margin-right: 6rem;
+}
+
+.slider_title{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+@media(max-width:600px){
+    
+}
+
+@media(max-width:768px){
+    .slider_img{
+        background-position: -175px;
+    }
+
+    .slider_content{
+        background: rgba(255,255,255,.8);
+        margin-right: 0rem;
+    }
+}
+
+/* vedio section css start from here */
+.vedio_section .vedios{
+    width: 100% !important;
+    height: 300px !important;
+}
+/* maid profile section css start from here */
+.profile_card .profile_card_header img{
+    max-height: 300px;
+    min-width: 100%;
+    object-fit: cover;
+    /* object-position: top; */
+}
+
+.profile_card_header_overlay{
+    background-color: var(--color-mehron);
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    opacity: 0;
+}
+
+.profile_card_header:hover .profile_card_header_overlay{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.profile_card_header span ion-icon{
+    width: 50px;
+    height: 50px;
+}
+.profile_card_header span{
+    display: none;
+    transition: 0.9s ease;
+}
+
+
+.profile_card_header:hover span{
+    display: block;
+    cursor: pointer;
+}
+
+/* vedio modal css start from here */
+.vedio_modal_content{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.vedio_modal_header .btn-close{
+    color: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+
+/* customer card css start from here */
+.customers_card .customers_card_header ion-icon{
+    width: 30px;
+    height: 30px;
+    color: var(--color-mehron);
+}
+
+/* accordion css start from here */
+.accordion{
+    border: 1px solid var(--color-mehron) !important;
+}
+.accordion-item{
+    border-bottom: 2px solid var(--color-mehron) !important;
+}
+
+.accordion-button:focus{
+    background-color: var(--color-mehron) !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+/* footer css start from here */
+.footer{
+    background-color: var(--color-mehron);
+}
+
+.social_links{
+    display: inline-flex;
+}
+
+.social_links li{
+    margin-right: 5px;
+}
+
+.social_links li a ion-icon{
+   background-color:#ffffff;
+   width: 25px;
+   height: 25px;
+   padding: 5px;
+   color: var(--color-mehron);
+   border-radius: 50%;
+}
+
+/* contact us page css start here */
+.contactus_card{
+    background-color: var(--color-mehron);
+    color: #ffffff;
+}
+
+.contactus_card .contactus_card_header span ion-icon{
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: var(--color-mehron);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* contactus form css start from here */
+.contactus_input{
+    border: 1px solid var(--color-mehron);
+    border-radius: 0;
+}
+
+.contactus_input::placeholder{
+    font-size: 1.5rem;
+}
+
+.map{
+    width: 700 !important;
+    height: 400px;
+}
+
+
+/* login page css start from here */
+.nav-pills .nav-item .nav-link{
+    color: var(--color-mehron);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    border: 1px solid var(--color-mehron) !important;
+}
+.nav-pills .nav-item .nav-link.active{
+    background-color: var(--color-mehron) !important;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+/* search maid page css start from here */
+.maid_card_para{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    /* Addition lines for 2 line or multiline ellipsis */
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.maid_contactcard{
+    background-color: #b7b1b161;
+}
+
+.hired_span{
+    background-color: var(--color-mehron) !important;
+}
+
+.play_span{
+    background-color: #365396 !important;
+}
+
+.page-link:focus{
+    background-color: var(--color-mehron) !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+/* maid packages page css start from here */
+.packages_card .packages_card_header{
+    background-color: var(--color-mehron) !important;
+}
+
+/* view profile page css start from here */
+.print_img img{
+   width: 30px;
+   height: 30px; 
+}
+
+.owl-nav{
+    display: flex;
+    justify-content: center;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next{
+    background-color: var(--color-mehron) !important;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border-radius: 5px !important;
+  
+}
+.owl-nav .owl-next{
+    margin-left: 3px !important;
+}
+.owl-nav .owl-prev span,
+.owl-nav .owl-next span{
+    font-size: 3rem;
+    color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* purchase package page css start from here */
+
+.form-wizard {
+    position: relative;
+    width:100%;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .steps ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .steps ul li {
+    float: left;
+    color: var(--color-mehron) !important;
+    padding: 0 30px;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out 0;
+    -moz-transition: all 0.4s ease-in-out 0;
+    -ms-transition: all 0.4s ease-in-out 0;
+    -otransition: all 0.4s ease-in-out 0;
+    transition: all 0.4s ease-in-out 0;
+    font-size: 1.5rem !important;
+  }
+  .steps ul li:hover, .steps ul li.active {
+    color: var(--color-mehron) !important;
+  }
+  .steps ul li:hover span, .steps ul li.active span {
+    background: var(--color-mehron) !important;
+    color: #fff;
+  }
+  .steps ul li:hover::after, .steps ul li.active::after {
+    background: var(--color-mehron) !important;
+    width: 100%;
+  }
+  .steps ul li::before, .steps ul li::after {
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: 22px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    -webkit-transition: all 0.4s ease-in-out 0;
+    -moz-transition: all 0.4s ease-in-out 0;
+    -ms-transition: all 0.4s ease-in-out 0;
+    -otransition: all 0.4s ease-in-out 0;
+    transition: all 0.4s ease-in-out 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -otransform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  /* .steps ul li::after {
+    width: 0;
+  } */
+  .steps ul li span {
+    display: block;
+    margin: 0 auto 3px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background: #fff;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 300;
+    color: #000;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.4s ease-in-out 0;
+    -moz-transition: all 0.4s ease-in-out 0;
+    -ms-transition: all 0.4s ease-in-out 0;
+    -otransition: all 0.4s ease-in-out 0;
+    transition: all 0.4s ease-in-out 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -oborder-radius: 2px;
+    border-radius: 2px;
+  }
+  .steps ul li:first-child::before, .steps ul li:first-child::after {
+    display: none;
+  }
+  
+  .form-container {
+    clear: both;
+    display: none;
+    left: 100%;
+    background: #fff;
+    padding: 30px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -oborder-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    -obox-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  }
+  .form-container.active {
+    display: block;
+  }
+  
+  .purchaseform[type=radio] {
+    width: 20px;
+    height: 20px;
+ }
+
+ .purchaseform_img{
+    width: 80px;
+ }
+
+ @media(max-width:768px){
+    .steps ul li {
+        padding: 0 5px;
+        font-size: 1rem  !important;
+      }
+      
+ }
+
+ #navbar1.activefixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1111;
+    background-color: #fff !important;
+ }
+
+
+
+/*new css*/
+.underlin{
+    width: 120px;
+    background-color: var(--color-mehron);
+    height: 1px;
+}
+
+
+.p-font{
+    font-size: 1.4rem;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.width-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
